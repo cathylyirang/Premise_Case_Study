@@ -56,10 +56,6 @@ for transparency.
 python -m venv .venv && source .venv/bin/activate
 pip install pandas numpy scikit-learn matplotlib seaborn nltk
 
-# Optional but recommended:
-pip install shap                   # for SHAP plots in §5.3
-pip install anthropic              # for live Claude agent in §6
-python -c "import nltk; nltk.download('vader_lexicon')"  # for sentiment
 
 # 2. Open the notebook
 jupyter lab case_study.ipynb
@@ -71,7 +67,7 @@ The notebook is **self-contained** — it loads only from `data/` and runs end-t
 with no extra setup. If `shap` or `nltk`/VADER isn't installed, the notebook
 falls back gracefully (built-in feature importance + tiny keyword-based sentiment).
 
-### Live Care Navigator agent (optional)
+### Live Care Navigator agent (TBC)
 
 The agent in §6 runs in two modes:
 
